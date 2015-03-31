@@ -1,7 +1,7 @@
 <script>
   (function(){
     var answer = 'Yes';
-    var guess = prompt('Are you a member of the secret club, Yes/No?');
+    var guess = prompt('Are you a member of the secret club, Yes/No? If not, what is your State.');
 
       if (guess == (answer))  {
         alert('You answered correctly, you are in the secret club!');
@@ -9,8 +9,15 @@
          var email = prompt('Now, what is your email!');
 
        } else if (guess == ('No'))  {
-        alert('So sad, too bad, you are not in the secret club!');
+        alert('So sad, too bad, you are not in the secret club! But if you want to join, then you have to answer some more questions.');
+
+      } else if (guess == ('WA')) {
+        var moreQuestions = prompt('What is the secret city??');
+
+      } else if (moreQuestions == ('Seattle')) {
+        alert('We will contact you on your acceptance.');
       }
+
     }
     )();
 </script>
